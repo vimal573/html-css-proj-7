@@ -1,0 +1,288 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 134rem;
+  margin: 0 auto;
+}
+
+/***************************************/
+/* NAVBAR */
+/**************************************/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.8rem 4rem;
+}
+
+nav img {
+  height: 4rem;
+}
+
+.nav-items {
+  display: flex;
+  gap: 6.2rem;
+}
+
+.nav-item {
+  font-size: 1.8rem;
+  color: #353535;
+}
+
+.active-item {
+  font-size: 1.8rem;
+  color: #fe5e35;
+}
+
+.intro-section {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  justify-content: center;
+  column-gap: 2rem;
+  padding: 0 4rem;
+}
+
+/**********************************/
+/* LEFT SECTION */
+/**********************************/
+.left-section {
+  padding-top: 4.2rem;
+}
+
+.left-section h3 {
+  font-size: 3.2rem;
+  font-weight: 300;
+}
+
+.left-section h3 img {
+  height: 3.2rem;
+}
+
+.left-section h1 {
+  font-size: 5.6rem;
+  letter-spacing: 3px;
+  font-family: "Fredoka One", sans-serif;
+}
+
+.sub-headlines {
+  padding: 2.4rem 0 1rem 4.2rem;
+}
+
+.sub-headline img {
+  height: 2.4rem;
+  width: 2.4rem;
+  background-color: #fe5e35;
+  border-radius: 50%;
+  margin-right: 0.8rem;
+}
+
+.sub-headline {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+}
+
+.text {
+  font-size: 1.2rem;
+  color: #9b9b9b;
+  letter-spacing: 0.1rem;
+  margin-top: 2.4rem;
+}
+
+.action-btns {
+  margin-top: 2.6rem;
+  display: flex;
+  gap: 2rem;
+}
+
+/*******************************/
+/* RIGHT SECTION */
+/*******************************/
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  left: -4rem;
+}
+
+.headphone-div {
+  position: relative;
+}
+
+.headphone-img {
+  height: 39rem;
+}
+
+.discount {
+  position: absolute;
+  top: 22rem;
+  left: -3rem;
+}
+
+.discount-content {
+  position: absolute;
+  top: 25rem;
+  left: -1.4rem;
+  text-align: center;
+}
+
+.discount-content h4 {
+  font-size: 0.8rem;
+  color: #ffffff;
+  line-height: 1;
+  letter-spacing: 1px;
+  font-family: "Fredoka One", sans-serif;
+}
+
+.discount-content h1 {
+  font-size: 3.6rem;
+  color: #ffffff;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  font-family: "Fredoka One", sans-serif;
+}
+
+.dots {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.dot {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  margin-bottom: 2.4rem;
+}
+
+.yellow-dot {
+  background-color: #fbd104;
+}
+
+.tomato-dot {
+  background-color: #fe5e35;
+}
+
+.black-dot {
+  background-color: #000000;
+}
+
+.action-btn {
+  font-size: 1.6rem;
+  color: #ffffff;
+  background-color: #fe5e35;
+  border: none;
+  border-radius: 10rem;
+  padding: 1rem 2.6rem;
+}
+
+/***************************/
+/* Media querries */
+/***************************/
+
+/* 1200px */
+
+@media screen and (max-width: 1200px) {
+  nav {
+    padding: 2.4rem 3.2rem;
+  }
+}
+
+@media screen and (max-width: 944px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .nav-items {
+    gap: 4rem;
+  }
+
+  .discount-content {
+    top: 25.4rem;
+    left: -1.1rem;
+  }
+
+  .discount-content h4 {
+    font-size: 1rem;
+  }
+
+  .discount-content h1 {
+    font-size: 4rem;
+  }
+
+  .intro-section {
+    /* display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    column-gap: 2rem;
+    padding: 0 3.2rem; */
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .action-btns {
+    justify-content: center;
+    margin-left: -3rem;
+  }
+
+  .right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 744px) {
+  nav {
+    flex-wrap: wrap;
+  }
+
+  .nav-items {
+    order: 1;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 644px) {
+  html {
+    font-size: 50%;
+  }
+
+  nav {
+    padding: 2rem 2.8rem;
+  }
+
+  .text {
+    margin-top: -0.8rem;
+  }
+
+  .discount-content {
+    top: 25.8rem;
+    left: -0.8rem;
+  }
+
+  .discount-content h4 {
+    font-size: 1.2rem;
+  }
+
+  .discount-content h1 {
+    font-size: 4.4rem;
+  }
+}
